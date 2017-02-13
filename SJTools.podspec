@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/yuhuaxingyun"
 
-  s.license      = "MIT"
+  s.license          =   { :type => 'MIT', :file => 'LICENSE' }
 
   s.author             = { "yuhuaxingyun" => "2496157421@qq.com" }
 
