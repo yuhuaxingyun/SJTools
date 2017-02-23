@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "SJTools", "SJTools/**/*.{h,m}"
 
-  s.framework  = "UIKit"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  #s.framework  = "UIKit"
+  s.frameworks = "SystemConfiguration"
 
 end
