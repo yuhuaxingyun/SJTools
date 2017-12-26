@@ -16,7 +16,6 @@
     NSDate *nowDate = [NSDate date];
     NSTimeInterval time = [nowDate timeIntervalSince1970];
     NSString *timeString = [NSString stringWithFormat:@"%lld", (long long)time];//转为字符型
-    HHLog(@"时间戳:%@", timeString);
     return timeString;
 }
 
@@ -141,51 +140,6 @@
     
     return timeStr;
 }
-
-
-
-// 解析 token, 判断是否过期
-+(BOOL)isTokenNotPass {
-    
-    NSString *loginToken = [[NSUserDefaults standardUserDefaults]objectForKey:LoginToken];
-    
-    if (loginToken.length == 0 || loginToken == nil) {
-        return NO;
-    } else {
-        
-        NSArray *array = [loginToken componentsSeparatedByString:@"."];      //以 .分割字符串
-        NSString *time = [JMyBaseTool textFromBase64String:array[1]];
-        
-        NSError *err = nil;
-        NSData *jsonData = [time dataUsingEncoding:NSUTF8StringEncoding];
-        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
-                                                            options:NSJSONReadingMutableContainers
-                                                              error:&err];
-        
-        //    NSString *userId = [dic objectForKey:@"userId"];
-        NSString *expired = [dic objectForKey:@"expired"];
-        NSString *nowStr =  [TimeTool getNowTimeTimestamp3];
-        HHLog(@"剩余时间:%lf",[expired doubleValue]-[nowStr doubleValue]);
-        HHLog(@"剩余%@个小时", [TimeTool SurplusConvertStrToTime:[NSString stringWithFormat:@"%lf", [expired doubleValue]-[nowStr doubleValue]]]);
-        
-        //    NSDate *timeDate = [[NSDate alloc]initWithTimeIntervalSince1970:([expired doubleValue])/1000];
-        //    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        //    dateFormatter.dateFormat = @"YYYY-MM-dd-HH-mm-ss";
-        //    NSString *STRR = [dateFormatter stringFromDate:timeDate];
-        //    HHLog(@"22过期时间:%@",STRR);
-        
-        if ([expired doubleValue] - [nowStr doubleValue] > 0) {
-            // 未过期
-            return YES;
-        } else {
-            
-            // 已过期
-            return NO;
-        }
-        
-    }
-}
-
 
 #pragma mark -- 首页签单 计时
 +(BOOL)isOneDayAfterWithTime:(NSDate *)beforeTime {
