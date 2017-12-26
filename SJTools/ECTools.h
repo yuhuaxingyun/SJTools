@@ -10,5 +10,6 @@
 #define ECTools_h
 
 #import "ECUtility.h"
+#import "TimeTool.h"
 
 #endif /* ECTools_h */

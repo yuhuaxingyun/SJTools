@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		214B86141FF22DAD0037CB49 /* TimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 214B860A1FF22DAC0037CB49 /* TimeTool.m */; };
 		848125AD1E482055009A3E7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848125AC1E482055009A3E7F /* main.m */; };
 		848125B01E482055009A3E7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 848125AF1E482055009A3E7F /* AppDelegate.m */; };
 		848125B31E482055009A3E7F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848125B21E482055009A3E7F /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		214B860A1FF22DAC0037CB49 /* TimeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTool.m; sourceTree = "<group>"; };
+		214B860B1FF22DAD0037CB49 /* TimeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTool.h; sourceTree = "<group>"; };
 		848125A81E482055009A3E7F /* SJToolsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJToolsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848125AC1E482055009A3E7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		848125AE1E482055009A3E7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 		84A25E971E51935600792553 /* SJTools */ = {
 			isa = PBXGroup;
 			children = (
+				214B860B1FF22DAD0037CB49 /* TimeTool.h */,
+				214B860A1FF22DAC0037CB49 /* TimeTool.m */,
 				84A25E981E51935600792553 /* ECTools.h */,
 				84A25E991E51935600792553 /* ECUtility.h */,
 				84A25E9A1E51935600792553 /* ECUtility.m */,
@@ -289,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				848125B31E482055009A3E7F /* ViewController.m in Sources */,
+				214B86141FF22DAD0037CB49 /* TimeTool.m in Sources */,
 				848125B01E482055009A3E7F /* AppDelegate.m in Sources */,
 				84A25E9B1E51935600792553 /* ECUtility.m in Sources */,
 				848125AD1E482055009A3E7F /* main.m in Sources */,
