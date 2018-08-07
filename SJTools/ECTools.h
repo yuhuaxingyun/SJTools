@@ -11,5 +11,6 @@
 
 #import "ECUtility.h"
 #import "TimeTool.h"
+#import "UIView+JPLRoundSide.h"
 
 #endif /* ECTools_h */
