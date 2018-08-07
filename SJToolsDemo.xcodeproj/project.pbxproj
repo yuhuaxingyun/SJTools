@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A9C37A721196D6A00295B8F /* UIView+JPLRoundSide.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C37A521196D6A00295B8F /* UIView+JPLRoundSide.m */; };
-		0A9C37A821196D6A00295B8F /* UIView+JPLRoundSide.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C37A521196D6A00295B8F /* UIView+JPLRoundSide.m */; };
-		0A9C37A921196D6A00295B8F /* UIView+JPLRoundSide.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C37A521196D6A00295B8F /* UIView+JPLRoundSide.m */; };
+		0A9C37AB2119727700295B8F /* JPLDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C37AA2119727700295B8F /* JPLDeviceUtil.m */; };
+		0A9C37AC2119727700295B8F /* JPLDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C37AA2119727700295B8F /* JPLDeviceUtil.m */; };
+		0A9C37AD2119727700295B8F /* JPLDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C37AA2119727700295B8F /* JPLDeviceUtil.m */; };
 		214B86141FF22DAD0037CB49 /* TimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 214B860A1FF22DAC0037CB49 /* TimeTool.m */; };
 		848125AD1E482055009A3E7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848125AC1E482055009A3E7F /* main.m */; };
 		848125B01E482055009A3E7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 848125AF1E482055009A3E7F /* AppDelegate.m */; };
@@ -40,8 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A9C37A521196D6A00295B8F /* UIView+JPLRoundSide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JPLRoundSide.m"; sourceTree = "<group>"; };
-		0A9C37A621196D6A00295B8F /* UIView+JPLRoundSide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JPLRoundSide.h"; sourceTree = "<group>"; };
+		0A9C37AA2119727700295B8F /* JPLDeviceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPLDeviceUtil.m; sourceTree = "<group>"; };
+		0A9C37AE2119727F00295B8F /* JPLDeviceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLDeviceUtil.h; sourceTree = "<group>"; };
 		214B860A1FF22DAC0037CB49 /* TimeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTool.m; sourceTree = "<group>"; };
 		214B860B1FF22DAD0037CB49 /* TimeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTool.h; sourceTree = "<group>"; };
 		848125A81E482055009A3E7F /* SJToolsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJToolsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,8 +156,8 @@
 		84A25E971E51935600792553 /* SJTools */ = {
 			isa = PBXGroup;
 			children = (
-				0A9C37A621196D6A00295B8F /* UIView+JPLRoundSide.h */,
-				0A9C37A521196D6A00295B8F /* UIView+JPLRoundSide.m */,
+				0A9C37AE2119727F00295B8F /* JPLDeviceUtil.h */,
+				0A9C37AA2119727700295B8F /* JPLDeviceUtil.m */,
 				214B860B1FF22DAD0037CB49 /* TimeTool.h */,
 				214B860A1FF22DAC0037CB49 /* TimeTool.m */,
 				84A25E981E51935600792553 /* ECTools.h */,
@@ -303,8 +303,8 @@
 				848125B31E482055009A3E7F /* ViewController.m in Sources */,
 				214B86141FF22DAD0037CB49 /* TimeTool.m in Sources */,
 				848125B01E482055009A3E7F /* AppDelegate.m in Sources */,
-				0A9C37A721196D6A00295B8F /* UIView+JPLRoundSide.m in Sources */,
 				84A25E9B1E51935600792553 /* ECUtility.m in Sources */,
+				0A9C37AB2119727700295B8F /* JPLDeviceUtil.m in Sources */,
 				848125AD1E482055009A3E7F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,8 +313,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9C37AC2119727700295B8F /* JPLDeviceUtil.m in Sources */,
 				848125C61E482055009A3E7F /* SJToolsDemoTests.m in Sources */,
-				0A9C37A821196D6A00295B8F /* UIView+JPLRoundSide.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,8 +322,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9C37AD2119727700295B8F /* JPLDeviceUtil.m in Sources */,
 				848125D11E482055009A3E7F /* SJToolsDemoUITests.m in Sources */,
-				0A9C37A921196D6A00295B8F /* UIView+JPLRoundSide.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
